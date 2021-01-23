@@ -1,0 +1,106 @@
+body {
+	background-color: lightgrey;
+	color: black;
+	margin: 50px;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+img {
+	width: 100%;
+}
+
+/*Header*/
+.header {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas: 
+	'penguin1 penguin1 penguin2'
+	'penguin1 penguin1 penguin3'
+}
+
+.penguin1 {
+	grid-area: penguin1;
+	min-height: 300px;
+	padding: 50px;
+	border: 1px solid black;
+	background-image: url(img/penguin1.jpg);
+	background-size: cover;
+}
+
+.penguin2 {
+	grid-area: penguin2;
+	border: 1px solid black;
+	background-image: url(img/penguin2.jpg);
+	background-size: cover;
+}
+
+.penguin3 {
+	grid-area: penguin3;
+	border: 1px solid black;
+	background-image: url(img/penguin3.jpg);
+	background-size: cover;
+}
+
+/*Nav*/
+.menu {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+}
+
+.menu .judul{
+	font-size: 25px;
+}
+
+.menu ul{
+	display: grid;
+	list-style: none;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-gap: 5px;
+}
+
+.menu a{
+	display: block;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+}
+
+/*Konten*/
+.konten {
+	display: grid;
+	grid-gap: 10px;
+	margin: 5px;
+	grid-template-areas: 
+	'konten1'
+	'konten2';
+}
+
+.konten1 {
+	grid-area: konten1;
+	background-color: white;
+	padding: 10px;
+}
+
+.konten2 {
+	grid-area: konten2;
+	background-color: white;
+	padding: 10px;
+}
+
+.konten img{
+	width: 50%;
+	display: block;
+	margin: auto;
+	padding: 10px;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
