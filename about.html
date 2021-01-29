@@ -37,6 +37,22 @@
             box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.8);
             /*border: 1px dashed grey;*/
         }
+	    
+	     .video { 
+                float: none; clear: both; 
+                width: 100%; 
+                position: relative; 
+                padding-bottom: 56.25%;
+                 padding-top: 25px; height: 0; 
+             } 
+
+            .video iframe {
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                width: 100%; 
+                height: 100%; 
+            }
     </style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
@@ -135,7 +151,9 @@
             <div class="row">
                 <div class="col-lg-5 col-xl-6">
                     <div class="image-container shadow">
-                         <iframe width="560" height="315" src="https://www.youtube.com/embed/BzwT9yxSJNc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         <div class="video"> 
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BzwT9yxSJNc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7 col-xl-6">
